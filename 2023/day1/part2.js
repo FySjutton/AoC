@@ -12,18 +12,14 @@ fs.readFile(path.join(__dirname, 'data.txt'), 'utf8', (err, data) => {
                 letter_str += i;
             } else {
                 nmb += i;
-                letter_str = "";
             }
             for (p of Object.keys(test)) {
-                console.log(letter_str + " - " + p)
-                if (letter_str.includes(p)) {
+                if (letter_str.includes(p) && letter_str != "") {
                     nmb += test[p];
-                    letter_str = "";
+                    letter_str = p[p.length - 1];
                 }
             }
         }
-        console.log("---")
-        console.log(x + " - " + nmb)
         total += parseInt(nmb[0] + nmb[nmb.length - 1]);
     }
     console.log(total)
