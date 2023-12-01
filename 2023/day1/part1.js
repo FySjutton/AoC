@@ -6,7 +6,7 @@ fs.readFile(path.join(__dirname, 'data.txt'), 'utf8', (err, data) => {
     for (x of data.split('\n')) {
         let new_code = "";
         for (y of x) {
-            if (!isNaN(parseFloat(y))) {
+            if (!isNaN(parseInt(y))) {
                 new_code += y;
             }
         }

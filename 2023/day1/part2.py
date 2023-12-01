@@ -11,6 +11,6 @@ for x in data.readlines():
         for p in get_number.keys():
             if (p in letter_str):
                 number_str += get_number[p]
-                letter_str = p[len(p) - 1]
+                letter_str = p[-1]
     total += int(number_str[0] + number_str[-1])
 print(total)
