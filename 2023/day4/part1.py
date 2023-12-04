@@ -12,3 +12,7 @@ for x in open('2023/day4/data.txt','r').readlines():
                 score = 1
     tot += score
 print(tot)
+
+
+# SHORT VERSION:
+# print(sum(2**(len(set(a.split(":")[1].split("|")[0].split()) & set(a.split(":")[1].split("|")[1].split()))-1) if set(a.split(":")[1].split("|")[0].split()) & set(a.split(":")[1].split("|")[1].split()) else 0 for a in open('2023/day4/data.txt','r').readlines()))
