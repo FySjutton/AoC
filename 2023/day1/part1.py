@@ -1,7 +1,5 @@
-import os
-data = open(os.getcwd() + "/FILEPATH.txt", "r")
 total = 0
-for x in data.readlines():
+for x in open("FILEPATH.txt", "r").readlines():
     ny_kod = ""
     for y in x:
         if y.isdigit():
