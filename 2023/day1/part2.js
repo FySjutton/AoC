@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 var total = 0;
 
-fs.readFile(path.join(__dirname, 'data.txt'), 'utf8', (err, data) => {
+fs.readFile(path.join(__dirname, 'FILENAME.txt'), 'utf8', (err, data) => {
     for (x of data.split('\n')) {
         let letter_str = "";
         let nmb = "";

@@ -1,4 +1,4 @@
-lst = [x.replace("\n", "") for x in open("2023/day3/data.txt", "r").readlines()]
+lst = [x.replace("\n", "") for x in open("FILEPATH.txt", "r").readlines()]
 tot, used_nbrs = 0, []
 for i, x in enumerate(lst):
     for v, y in enumerate(x):

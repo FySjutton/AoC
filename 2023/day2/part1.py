@@ -1,4 +1,4 @@
-with open("2023/day2/data.txt", "r") as file:
+with open("FILEPATH.txt", "r") as file:
     total = 0
     for i, x in enumerate(file, 1):
         for y in x.split(": ")[1].replace(";", ",").split(", "):

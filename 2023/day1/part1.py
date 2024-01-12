@@ -1,5 +1,5 @@
 import os
-data = open(os.getcwd() + "/2023/day1/data.txt", "r")
+data = open(os.getcwd() + "/FILEPATH.txt", "r")
 total = 0
 for x in data.readlines():
     ny_kod = ""

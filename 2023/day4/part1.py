@@ -1,5 +1,5 @@
 tot = 0
-for x in open('2023/day4/data.txt','r').readlines():
+for x in open('FILEPATH.txt','r').readlines():
     wins, lots = x.split(":")[1].split("|")
     wins = wins.split()
     lots = lots.split()

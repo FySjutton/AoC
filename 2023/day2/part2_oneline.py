@@ -4,4 +4,4 @@ print(sum(
             [[[int(y.split()[0]) 
                 for y in x.strip().split(": ")[1].replace(";", ",").split(", ") 
                 if y.split()[1] == p] for p in ["red", "blue", "green"]] 
-                for x in open("2023/day2/data.txt", "r").readlines()]]]))
+                for x in open("FILEPATH.txt", "r").readlines()]]]))

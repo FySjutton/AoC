@@ -1,4 +1,4 @@
-with open("2023/day2/data.txt", "r") as file:
+with open("FILEPATH.txt", "r") as file:
     total = 0
     for x in file:
         max_values = {'red': 0, 'blue': 0, 'green': 0}

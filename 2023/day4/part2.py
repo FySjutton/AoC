@@ -1,5 +1,4 @@
-aocdata = '2023/day4/data.txt'
-lst = [[x[0].split(), x[1].split()] for x in [y.split(":")[1].split("|") for y in open(aocdata, "r").readlines()]]
+lst = [[x[0].split(), x[1].split()] for x in [y.split(":")[1].split("|") for y in open('FILEPATH.txt', "r").readlines()]]
 des = {i: 1 for i in range(len(lst))}
 tot = len(lst)
 while len(des.keys()) > 0:
